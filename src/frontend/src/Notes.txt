@@ -1,0 +1,26 @@
+React 18 tutorial from CodeEvolution
+
+1. React uses reusable Components to create Web apps.
+
+2. It returns JSX which is JavaScript XML which is a syntactical sugar needed to make developer's 
+    life easy by returning HTML like code. Internally it return "React.Component('div')"
+
+3. In React 18, a component is nothing but a JavaScript function.
+    - It accepts input properties and return HTML (JSX) which describes UI.
+
+4. We can set attributes on our component tags, which we can use in the JS file using "props" object.
+    And all the properties of this props object are immutable.
+
+5. props vs state
+    -props object is immutable and are controlled by parent component.
+    -state is controlled by the component itself.
+
+6. In case of Parent to Child component communication, we send 
+    data in the Child attribute and collect it in the props.
+
+7. In case of Child to Parent communication, Parent component
+    will return child component and we send the method 
+    reference to the child component attribute, and thus using
+    props in the Child component we can use that method.
+
+8. "Hooks" are special functions which hooks us up to React features.
