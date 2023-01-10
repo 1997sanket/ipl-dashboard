@@ -8,7 +8,7 @@ export const HomePage = () => {
 	const [teams, setTeams] = useState([]);
 
 	useEffect(() => {
-		fetch("http://localhost:8080/teams")
+		fetch("/teams")
 			.then((response) => response.json())
 			.then((data) => {
 				setTeams(data);

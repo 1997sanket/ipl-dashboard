@@ -10,7 +10,7 @@ export const TeamPage = () => {
 	const [team, setTeam] = useState({ teamName: "", recentMatches: [] });
 	const { teamName } = useParams();
 
-	const getTeamUri = `http://localhost:8080/teams/${teamName}`;
+	const getTeamUri = `/teams/${teamName}`;
 
 	useEffect(() => {
 		fetch(getTeamUri)

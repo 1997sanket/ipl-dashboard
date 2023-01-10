@@ -9,7 +9,7 @@ import "./MatchPage.scss";
 export const MatchPage = () => {
 	const [matches, setMatches] = useState([]);
 	const { teamName, year } = useParams();
-	const matchesUri = `http://localhost:8080/teams/${teamName}/matches/?year=${year}`;
+	const matchesUri = `/teams/${teamName}/matches/?year=${year}`;
 
 	const matchesPresent = matches.length > 0;
 

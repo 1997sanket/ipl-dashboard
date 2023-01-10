@@ -1,4 +1,8 @@
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+/*
+    Using HashRouter instead of BrowserRouter to add the hash in our url,
+    so that React and Spring Boot urls don't collide.
+*/
+import { HashRouter as Router, Route, Routes } from "react-router-dom";
 import "./App.scss";
 import { HomePage } from "./pages/HomePage";
 import { MatchPage } from "./pages/MatchPage";
