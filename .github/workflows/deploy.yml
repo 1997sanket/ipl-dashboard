@@ -42,7 +42,7 @@ jobs:
                   use_existing_version_if_available: false
                   application_name: ipl-dashboard
                   environment_name: Ipldashboard-env
-                  version_label: ${{github.SHA}}
-                  region: us-east-1
+                  version_label: ${{github.run_number}}
+                  region: ap-south-1
                   deployment_package: ipl-dashboard-0.0.1-SNAPSHOT.jar
                   
